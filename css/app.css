@@ -1,0 +1,80 @@
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+.bounce {
+  -webkit-animation: bounce 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+          animation: bounce 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  background-color: Grey; }
+
+img {
+  max-width: 100%; }
+
+.hero-image {
+  background-image: url("../../app/images/warrior.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  margin-bottom: 10px; }
+
+.hero-2 {
+  background-image: url("../../app/images/rogue.png"); }
+
+.hero-3 {
+  background-image: url("../../app/images/wizard.png");
+  background-size: 80%; }
+
+.hero-4 {
+  background-image: url("../../app/images/berserker.png"); }
+
+.hero-5 {
+  background-image: url("../../app/images/gunner.png");
+  background-size: 90%; }
+
+.hero-6 {
+  background-image: url("../../app/images/dragoon.png"); }
+
+.mainpage-header {
+  color: #FFFFFF;
+  text-align: center; }
+
+.hero-selection-section {
+  background-color: #FFFFFF;
+  text-align: center;
+  margin: 0 0 20px 0;
+  border-radius: 10px; }
+
+#hero-health-bar {
+  width: 100%;
+  background-color: red; }
+
+#hero-health-left {
+  width: 50%;
+  height: 30px;
+  background-color: green; }
+
+/*# sourceMappingURL=app.css.map */
