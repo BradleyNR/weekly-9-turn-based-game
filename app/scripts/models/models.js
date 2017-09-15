@@ -22,6 +22,10 @@ function Hero(config){
   config = config || {};
 
   config = Object.assign({}, config);
+  this.name = config.name,
+  this.description = config.description,
+  this.cssClass = config.cssClass,
+  this.image = config.image
 };
 Hero.prototype = new Character();
 
