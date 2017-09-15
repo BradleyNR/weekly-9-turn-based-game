@@ -6,16 +6,52 @@ var loadBattle = require('./controllers/loadBattle.js');
 var actionTypes = require('./controllers/actiontypes.js')
 var entities = require('./models/models.js');
 
-
+// ------ Characters ------
 var heroList = [
-  new entities.Hero({name: 'Warrior', description: 'fill this in', cssClass: '', image: '../../app/images/warrior.png', attackPower: 20}),
-  new entities.Hero({name: 'Rogue', description: 'fill this in', cssClass: 'hero-2', image: '../../app/images/rogue.png'}),
-  new entities.Hero({name: 'Wizard', description: 'fill this in', cssClass: 'hero-3', image: '../../app/images/wizard.png'}),
-  new entities.Hero({name: 'Berserker', description: 'fill this in', cssClass: 'hero-4', image: '../../app/images/berserker.png'}),
-  new entities.Hero({name: 'Gunner', description: 'fill this in', cssClass: 'hero-5', image: '../../app/images/gunner.png'}),
-  new entities.Hero({name: 'Lancer', description: 'fill this in', cssClass: 'hero-6', image: '../../app/images/dragoon.png'})
+  new entities.Hero({
+    name: 'Warrior',
+    description: 'The Warrior has increased power and health, but no special ability',
+    cssClass: '',
+    image: '../../app/images/warrior.png',
+    attackPower: 20,
+    health: 150
+  }),
+  new entities.Hero({
+    name: 'Rogue',
+    description: 'The rogue has low attack power but high evasion',
+    cssClass: 'hero-2',
+    image: '../../app/images/rogue.png',
+    attackPower: 5
+  }),
+  new entities.Hero({
+    name: 'Wizard',
+    description: 'The wizard has low health, but a powerful fireball attack',
+    cssClass: 'hero-3',
+    image: '../../app/images/wizard.png',
+    health: 75
+  }),
+  new entities.Hero({
+    name: 'Berserker',
+    description: 'The berserker has high health and deals increased damage at lower health',
+    cssClass: 'hero-4',
+    image: '../../app/images/berserker.png',
+    health: 150
+  }),
+  new entities.Hero({
+    name: 'Gunner',
+    description: 'The gunner has a gun, another gun, and yet another gun, plus one more gun',
+    cssClass: 'hero-5',
+    image: '../../app/images/gunner.png'
+  }),
+  new entities.Hero({
+    name: 'Lancer',
+    description: 'The lancer has a chance to deal a critical hit',
+    cssClass: 'hero-6',
+    image: '../../app/images/dragoon.png'
+  })
 ];
 
+// ------ Enemies ------
 var enemyList = [
   new entities.Enemy({name: 'Dragon', image: '../../app/images/dragon.png'}),
   new entities.Enemy({name: 'Garland, knight of Darkness', image: '../../app/images/garland.png'}),
