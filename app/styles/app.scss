@@ -72,3 +72,16 @@ img {
   margin: 0 0 20px 0;
   border-radius: 10px;
 }
+
+
+//HEALTH BAR
+
+#hero-health-bar {
+    width: 100%;
+    background-color: red;
+}
+#hero-health-left {
+    width: 50%;
+    height: 30px;
+    background-color: green;
+}

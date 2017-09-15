@@ -21,20 +21,33 @@ function Hero(config){
   'use strict';
   config = config || {};
 
-  config = Object.assign({}, config);
-  this.name = config.name,
-  this.description = config.description,
-  this.cssClass = config.cssClass,
-  this.image = config.image
+  return Object.assign(this, config);
 };
 Hero.prototype = new Character();
+
+
+// function Hero(config){
+//   'use strict';
+//   config = config || {};
+//
+//   config = Object.assign({}, config);
+//   this.name = config.name,
+//   this.description = config.description,
+//   this.cssClass = config.cssClass,
+//   this.image = config.image,
+//   this.attackPower = config.attackPower
+// };
+// Hero.prototype = new Character();
 
 
 function Enemy(config){
   'use strict';
   config = config || {};
 
-  settings = Object.assign({}, config);
+  config = Object.assign({}, config);
+  this.name = config.name,
+  this.cssClass = config.cssClass,
+  this.image = config.image
 };
 Enemy.prototype = new Character();
 
