@@ -12,7 +12,7 @@ var heroList = [
     name: 'Warrior',
     description: 'The Warrior has increased power',
     cssClass: '',
-    image: '../images/warrior.png',
+    image: './images/warrior.png',
     attackPower: 20,
     health: 150
   }),
@@ -20,45 +20,45 @@ var heroList = [
     name: 'Rogue',
     description: 'The rogue has low attack power',
     cssClass: 'hero-2',
-    image: '../images/rogue.png',
+    image: './images/rogue.png',
     attackPower: 5
   }),
   new entities.Hero({
     name: 'Wizard',
     description: 'The wizard has low health',
     cssClass: 'hero-3',
-    image: '../images/wizard.png',
+    image: './images/wizard.png',
     health: 75
   }),
   new entities.Hero({
     name: 'Berserker',
     description: 'The berserker has high health',
     cssClass: 'hero-4',
-    image: '../images/berserker.png',
+    image: './images/berserker.png',
     health: 150
   }),
   new entities.Hero({
     name: 'Gunner',
     description: 'The gunner has a gun, another gun, and yet another gun, plus one more gun',
     cssClass: 'hero-5',
-    image: '../images/gunner.png'
+    image: './images/gunner.png'
   }),
   new entities.Hero({
     name: 'Lancer',
     description: 'This is the Lancer',
     cssClass: 'hero-6',
-    image: '../images/dragoon.png'
+    image: './images/dragoon.png'
   })
 ];
 
 // ------ Enemies ------
 var enemyList = [
-  new entities.Enemy({name: 'Dragon', image: '../../app/images/dragon.png'}),
-  new entities.Enemy({name: 'Garland, knight of Darkness', image: '../../app/images/garland.png'}),
-  new entities.Enemy({name: 'Goblin', image: '../../app/images/goblin.png'}),
-  new entities.Enemy({name: 'Vampire', image: '../../app/images/vampire.png'}),
-  new entities.Enemy({name: 'Witch', image: '../../app/images/witch.png'}),
-  new entities.Enemy({name: 'Golem', image: '../../app/images/golem.png'}),
+  new entities.Enemy({name: 'Dragon', image: './images/dragon.png'}),
+  new entities.Enemy({name: 'Garland, knight of Darkness', image: './images/garland.png'}),
+  new entities.Enemy({name: 'Goblin', image: './images/goblin.png'}),
+  new entities.Enemy({name: 'Vampire', image: './images/vampire.png'}),
+  new entities.Enemy({name: 'Witch', image: './images/witch.png'}),
+  new entities.Enemy({name: 'Golem', image: './images/golem.png'}),
 ];
 
 var INITIAL_STATE = {
