@@ -10,7 +10,7 @@ var entities = require('./models/models.js');
 var heroList = [
   new entities.Hero({
     name: 'Warrior',
-    description: 'The Warrior has increased power and health, but no special ability',
+    description: 'The Warrior has increased power',
     cssClass: '',
     image: '../../app/images/warrior.png',
     attackPower: 20,
@@ -18,21 +18,21 @@ var heroList = [
   }),
   new entities.Hero({
     name: 'Rogue',
-    description: 'The rogue has low attack power but high evasion',
+    description: 'The rogue has low attack power',
     cssClass: 'hero-2',
     image: '../../app/images/rogue.png',
     attackPower: 5
   }),
   new entities.Hero({
     name: 'Wizard',
-    description: 'The wizard has low health, but a powerful fireball attack',
+    description: 'The wizard has low health',
     cssClass: 'hero-3',
     image: '../../app/images/wizard.png',
     health: 75
   }),
   new entities.Hero({
     name: 'Berserker',
-    description: 'The berserker has high health and deals increased damage at lower health',
+    description: 'The berserker has high health',
     cssClass: 'hero-4',
     image: '../../app/images/berserker.png',
     health: 150
@@ -45,7 +45,7 @@ var heroList = [
   }),
   new entities.Hero({
     name: 'Lancer',
-    description: 'The lancer has a chance to deal a critical hit',
+    description: 'This is the Lancer',
     cssClass: 'hero-6',
     image: '../../app/images/dragoon.png'
   })
@@ -75,7 +75,9 @@ function reducer(state, action){
     case actionTypes.LOAD_BATTLE:
       state.chosenHero = action.chosenHero,
       state.chosenEnemy = action.chosenEnemy,
-      state.heroSelect = true
+      state.heroSelect = true,
+      state.winScreen = false,
+      state.attackMessage = ''
       break;
 
     default:

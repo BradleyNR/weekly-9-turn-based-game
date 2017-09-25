@@ -1,28 +1,38 @@
-<div class="row">
-  <div class="two columns offset-by-two">
-    <p class="twelve columsn">{{chosenHero.name}}</p>
-    <img class="twelve columns" src="{{chosenHero.image}}" alt="{{chosenHero.name}}">
 
-    <div class="row">
-      <p class="two columns">HP:</p>
-      <p class="two columns">{{chosenHero.health}}</p>
+<main class='battle-main-area'>
+  <div class="row">
+    <div class="two columns offset-by-one">
+      <div class="hero-container">
+
+        <p class="twelve columns hero-name">{{chosenHero.name}}</p>
+        <img class="twelve columns hero-image-battle" src="{{chosenHero.image}}" alt="{{chosenHero.name}}">
+
+        <div class="row">
+          <p class="twelve columns hero-hp">HP: {{chosenHero.health}}</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="three columns offset-by-one">
+      <h3 class='attack-text'>{{attack}}<br>{{enemyAttack}}</h3>
+    </div>
+
+    <div class="two columns offset-by-two">
+      <div class="enemy-container">
+        <p class="twelve columns enemy-name">{{chosenEnemy.name}}</p>
+        <img class="twelve columns" src="{{chosenEnemy.image}}" alt="IMAGE OF {{chosenEnemy.name}}">
+
+        <div class="row enemy-hp">
+          <p class="twelve columns enemy-hp">HP: {{chosenEnemy.health}}</p>
+        </div>
+      </div>
     </div>
 
   </div>
-
-  <div class="two columns offset-by-four">
-    <p class="twelve columns">{{chosenEnemy.name}}</p>
-    <img class="twelve columns" src="{{chosenEnemy.image}}" alt="IMAGE OF {{chosenEnemy.name}}">
-
-    <div class="row">
-      <p class="two columns">HP:</p>
-      <p class="two columns">{{chosenEnemy.health}}</p>
+  <div class="row">
+    <div class="two columns offset-by-two">
+      <button type="button" class="js-hero-attack hero-attack-button">Attack!</button>
     </div>
-
   </div>
-</div>
-<div class="row">
-  <div class="two columns offset-by-two">
-    <button type="button" class="js-hero-attack">Attack!</button>
-  </div>
-</div>
+</main>
