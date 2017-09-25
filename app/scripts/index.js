@@ -12,7 +12,7 @@ var heroList = [
     name: 'Warrior',
     description: 'The Warrior has increased power',
     cssClass: '',
-    image: '../../app/images/warrior.png',
+    image: '../images/warrior.png',
     attackPower: 20,
     health: 150
   }),
@@ -20,34 +20,34 @@ var heroList = [
     name: 'Rogue',
     description: 'The rogue has low attack power',
     cssClass: 'hero-2',
-    image: '../../app/images/rogue.png',
+    image: '../images/rogue.png',
     attackPower: 5
   }),
   new entities.Hero({
     name: 'Wizard',
     description: 'The wizard has low health',
     cssClass: 'hero-3',
-    image: '../../app/images/wizard.png',
+    image: '../images/wizard.png',
     health: 75
   }),
   new entities.Hero({
     name: 'Berserker',
     description: 'The berserker has high health',
     cssClass: 'hero-4',
-    image: '../../app/images/berserker.png',
+    image: '../images/berserker.png',
     health: 150
   }),
   new entities.Hero({
     name: 'Gunner',
     description: 'The gunner has a gun, another gun, and yet another gun, plus one more gun',
     cssClass: 'hero-5',
-    image: '../../app/images/gunner.png'
+    image: '../images/gunner.png'
   }),
   new entities.Hero({
     name: 'Lancer',
     description: 'This is the Lancer',
     cssClass: 'hero-6',
-    image: '../../app/images/dragoon.png'
+    image: '../images/dragoon.png'
   })
 ];
 
