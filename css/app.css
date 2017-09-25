@@ -42,21 +42,21 @@ img {
   margin-bottom: 10px; }
 
 .hero-2 {
-  background-image: url("../../app/images/rogue.png"); }
+  background-image: url("../images/rogue.png"); }
 
 .hero-3 {
-  background-image: url("../../app/images/wizard.png");
+  background-image: url("../images/wizard.png");
   background-size: 80%; }
 
 .hero-4 {
-  background-image: url("../../app/images/berserker.png"); }
+  background-image: url("../images/berserker.png"); }
 
 .hero-5 {
-  background-image: url("../../app/images/gunner.png");
+  background-image: url("../images/gunner.png");
   background-size: 90%; }
 
 .hero-6 {
-  background-image: url("../../app/images/dragoon.png"); }
+  background-image: url("../images/dragoon.png"); }
 
 .mainpage-header {
   color: #FFFFFF;
