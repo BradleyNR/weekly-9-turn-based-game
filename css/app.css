@@ -34,7 +34,7 @@ img {
   max-width: 100%; }
 
 .hero-image {
-  background-image: url("../../app/images/warrior.png");
+  background-image: url("../images/warrior.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
